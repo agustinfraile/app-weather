@@ -1,0 +1,32 @@
+.formContainer {
+  /* background-color: beige; */
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  height: auto;
+}
+
+.formContainer_input {
+  /* background-color: aqua; */
+  background-color: aliceblue;
+  width: 25em;
+  height: 3em;
+  border-radius: 16px;
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 3px 1px #00000028;
+  padding: 0 1em;
+  margin: 0 .2em;
+}
+
+
+.formContainer_submit {
+  background-color: #266A94;
+  color: #e7e7e7;
+  border-radius: 10px;
+  width: 6em;
+  height: 3em;
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 3px 1px #00000028;
+}
