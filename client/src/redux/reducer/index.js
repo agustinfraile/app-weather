@@ -1,4 +1,4 @@
-import { GET_WEATHER } from "../actions";
+import { GET_ALL_WEATHER, GET_WEATHER } from "../actions";
 
 const initialState = {
   weather: [],
@@ -10,6 +10,10 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         weather: action.payload,
+      };
+    case GET_ALL_WEATHER:
+      return {
+        ...state,
         allWeather: action.payload,
       };
     default:

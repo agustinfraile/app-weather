@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { Button, Form } from "react-bootstrap";
 import { useDispatch } from "react-redux";
+import { getWeather } from "../../redux/actions";
 
 import styles from "./Searchbar.module.css";
-import { getWeather } from "../../redux/actions";
 
 const Searchbar = () => {
   const dispatch = useDispatch();
