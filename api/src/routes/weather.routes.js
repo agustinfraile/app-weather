@@ -9,6 +9,7 @@ router.get("/weather", async (req, res) => {
   try {
     if (city) {
       const citySelect = await getWeather(city);
+      console.log(citySelect)
       return res.status(200).send(citySelect);
     } else {
         return res.status(404).send('Proporcione un dato valido')
