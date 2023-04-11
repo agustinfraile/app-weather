@@ -18,7 +18,7 @@ const getWeather = async (city) => {
             clouds: resp.data.clouds.all,
             lon: resp.data.coord.lon,
             lat: resp.data.coord.lat,
-            img: resp.data.weather[0].icon,
+            img: resp.data.weather[0].description,
             id: resp.data.id,
             name: resp.data.name
         }
