@@ -14,7 +14,13 @@ const Searchbar = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(getWeather(value));
+
+    if(value) {
+      dispatch(getWeather(value));
+    } else if(!value){
+      alert('Ingrese una ciudad')
+    }
+    
     setValue("");
   };
 

@@ -1,0 +1,25 @@
+.menuCnt {
+    background-color: aquamarine;
+
+    width: 100%;
+    height: 5em;
+    display: flex;
+
+}
+
+.menuCnt_Logo {
+    background-color: beige;
+
+    width: 20%;
+    height: 5em;
+}
+
+
+.menuCnt_Search {
+    background-color: rgba(165, 42, 42, 0.27);
+
+    width: 60%;
+    margin: 0 auto;
+    padding: 1em 0;
+    
+}
