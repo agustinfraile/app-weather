@@ -55,7 +55,7 @@ const Card = ({ citySelectedWeather }) => {
           </div>
         </div>
       ) : (
-        <h1>Busca un clima 👁️</h1>
+        <h1>Busca un clima 🌡️</h1>
       )}
     </>
   );

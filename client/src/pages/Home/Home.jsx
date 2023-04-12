@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
-import styles from "./Home.module.css";
-import Searchbar from '../../components/Searchbar/Searchbar';
 import Card from '../../components/Card/Card';
 import { useDispatch, useSelector } from 'react-redux';
-import { getAllWeather, getWeather } from '../../redux/actions';
+import Navbar from '../../components/Navbar/Navbar';
+import styles from "./Home.module.css";
 
 const Home = () => {
 
@@ -15,7 +14,7 @@ const Home = () => {
 
   return (
     <div className={styles.homeContainer}>
-        <Searchbar />
+        <Navbar />
         <Card 
           citySelectedWeather={citySelectedWeather}
         />
