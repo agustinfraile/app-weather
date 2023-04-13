@@ -1,15 +1,16 @@
 .formContainer {
-  /* background-color: beige; */
+  background-color: beige;
   display: flex;
   flex-direction: row;
-  width: 25%;
+  width: 90%;
   height: auto;
+  margin: 0 auto;
 }
 
 .formContainer_input {
   /* background-color: aqua; */
   background-color: aliceblue;
-  width: 25em;
+  width: 100%;
   height: 3em;
   border-radius: 16px;
   outline: none;
