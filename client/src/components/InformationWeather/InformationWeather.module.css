@@ -1,8 +1,38 @@
 .card_container {
     background-color: rgb(35, 110, 65);
     width: 95%;
-    height: 25em;
+    height: 80vh;
     margin: 1em auto;
-    /* border-radius: 24px; */
-    /* box-shadow: 1px 1px 3px 1px #00000028; */
+
+}
+
+.card_container_name {
+    background-color: chocolate;
+    width: 100%;
+    height: 4em;
+}
+
+.card_container_name h1 {
+    text-align: center;
+    background-color: transparent;
+}
+
+.card_container_info {
+    background-color: rgba(21, 123, 154, 0.724);
+    width: 100%;
+    height: 25em;
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+.card_container_img {
+    background-color: rgb(137, 81, 189);
+    width: 17%;
+    border-radius: 24px;
+    box-shadow: 1px 1px 3px 1px #00000028;
+}
+
+.card_container_img i {
+    background-color: aliceblue;
 }
