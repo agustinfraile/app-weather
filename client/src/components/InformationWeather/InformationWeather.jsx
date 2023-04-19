@@ -1,15 +1,18 @@
-import React from 'react';
+import brokenClouds from '../../images/icons/broken-clouds.png';
+import fewClouds from '../../images/icons/few-clouds.png';
+import clearSky from '../../images/icons/clear-sky.png';
+import clouds from '../../images/icons/clouds.png';
 
 import styles from './InformationWeather.module.css';
 
 const InformationWeather = ({ citySelectedWeather }) => {
 
     const climaIconos = [
-        { description: "clear sky", icon: "fas fa-sun" },
-        { description: "few clouds", icon: "fas fa-cloud-sun" },
-        { description: "scattered clouds", icon: "fas fa-cloud" },
-        { description: "broken clouds", icon: "fas fa-cloud-sun" },
-        { description: "overcast clouds", icon: "fas fa-cloud" },
+        { description: "clear sky", icon: clearSky },
+        { description: "few clouds", icon: fewClouds },
+        { description: "scattered clouds", icon: clouds },
+        { description: "broken clouds", icon: brokenClouds },
+        { description: "overcast clouds", icon: clouds },
         { description: "rain", icon: "fas fa-cloud-rain" },
         { description: "snow", icon: "fas fa-snowflake" },
         { description: "thunderstorm", icon: "fas fa-bolt" },
@@ -32,28 +35,39 @@ const InformationWeather = ({ citySelectedWeather }) => {
     <>
       {citySelectedWeather && Object.keys(citySelectedWeather).length > 0 ? (
         <div className={styles.card_container}>
+          
           <div className={styles.card_container_name}>
             <h1>{citySelectedWeather.name}</h1>
           </div>
-          <div className={styles.card_container_img}>
-            {/* Reemplaza imagen con el icono de FontAwesome */}
-            <i 
-                className={iconWeather(citySelectedWeather.img)} 
-            /> 
+
+          <div className={styles.card_container_info}>
+
+            <div className={styles.card_container_img}>
+              {/* Reemplaza imagen con el icono de FontAwesome */}
+              <img src={iconWeather(citySelectedWeather.img)} alt="" />
+            </div>
+
+            {/* <div className={styles.card_container_weather}>
+              <h4>{citySelectedWeather.weather}</h4>
+            </div> */}
+
           </div>
-          <div className={styles.card_container_weather}>
-            <h4>{citySelectedWeather.weather}</h4>
+
+          <div className={styles.card_container_weatherFull}>
+
+            <div className={styles.card_container_weatherMin}>
+              <h4>
+                  Temperatura minima: {Math.round(citySelectedWeather.weather_min)}°C
+              </h4>
+            </div>
+            <div className={styles.card_container_weatherMax}>
+              <h4>
+                  Temperatura maxima: {Math.round(citySelectedWeather.weather_max)}°C
+              </h4>
+            </div>
+
           </div>
-          <div className={styles.card_container_weatherMin}>
-            <h4>
-                Temperatura minima: {Math.round(citySelectedWeather.weather_min)}
-            </h4>
-          </div>
-          <div className={styles.card_container_weatherMax}>
-            <h4>
-                Temperatura maxima: {Math.round(citySelectedWeather.weather_max)}
-            </h4>
-          </div>
+
           <div className={styles.card_container_wind}>
             <h4>Viento: {citySelectedWeather.wind} km/h</h4>
           </div>
