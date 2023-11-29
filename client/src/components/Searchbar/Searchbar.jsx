@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { getWeather } from "../../redux/actions";
 
+import iconSearch from "../../images/icons/busqueda.png";
+
 import styles from "./Searchbar.module.css";
 
 const Searchbar = () => {
@@ -38,7 +40,7 @@ const Searchbar = () => {
         type="submit"
         onClick={handleSubmit}
         >
-        Buscar
+          <img src={iconSearch} alt="buscar" />
       </button>
     </form>
   );

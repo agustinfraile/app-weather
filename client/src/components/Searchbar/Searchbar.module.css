@@ -1,7 +1,9 @@
 .formContainer {
-  background-color: beige;
+  /* background-color: beige; */
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 90%;
   height: auto;
   margin: 0 auto;
@@ -10,23 +12,30 @@
 .formContainer_input {
   background-color: #F4F4F4;
   width: 100%;
-  height: 3em;
-  border-radius: 16px;
+  height: 4em;
+  border-radius: 25px;
   outline: none;
   border: none;
-  box-shadow: 1px 1px 3px 1px #00000028;
+  box-shadow: 2px 2px 5px 1px #78787878;
   padding: 0 1em;
   margin: 0 .2em;
 }
 
 
 .formContainer_submit {
-  background-color: #266A94;
+  background-color: #F4F4F4;
   color: #e7e7e7;
-  border-radius: 10px;
   width: 6em;
-  height: 3em;
+  height: 4em;
   outline: none;
   border: none;
-  box-shadow: 1px 1px 3px 1px #00000028;
+  position: relative;
+  right: 8em;
+}
+
+.formContainer_submit img {
+  width: 2.5em;
+  height: 2.5em;
+  top: .5em;
+  left: .5em;
 }
